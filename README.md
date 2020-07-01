@@ -2,6 +2,12 @@
 
 This is a project for me to learn about the interaction between Node.js and TypeScript.
 
+## Goals
+
+- [x] Create a simple web app using TypeScript and Node.js
+- [x] Serve the web app within a Docker container
+- [ ] Deploy the containerized web app to the cloud using [AKS](https://docs.microsoft.com/en-us/azure/aks/)
+
 ## Getting Started
 
 A lot of the configuration for this app has been referenced from [microsoft/TypeScript-Node-Starter](https://github.com/microsoft/TypeScript-Node-Starter), but I am keeping it as simple as possible.
