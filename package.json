@@ -5,14 +5,15 @@
   "scripts": {
     "build": "npm run build-ts && npm run build-docker",
     "build-ts": "tsc",
-    "build-docker": "docker build -t znewton/ts-node-poc .",
+    "build-docker": "docker build -t $USER/ts-node-poc .",
     "serve": "node dist/server.js",
     "serve-debug": "nodemon --inspect dist/server.js",
-    "serve-docker": "docker run -p 8080:8080 znewton/ts-node-poc",
+    "serve-docker": "docker run -p 8080:8080 $USER/ts-node-poc",
     "start": "npm run serve",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
     "watch-node": "nodemon dist/server.js",
-    "watch-ts": "tsc -w"
+    "watch-ts": "tsc -w",
+    "name": "echo $USER"
   },
   "keywords": [
     "TypeScript",

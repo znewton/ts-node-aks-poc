@@ -6,5 +6,6 @@ RUN npm ci --only=production
 
 COPY dist ./dist
 
-EXPOSE 8080
+EXPOSE 80
+ENV PORT=80
 CMD [ "npm", "start" ];
